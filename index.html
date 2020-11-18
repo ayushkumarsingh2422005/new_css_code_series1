@@ -1,0 +1,749 @@
+<!--
+    Author = AYUSH KUMAR SINGH
+    Created on 23rd sept 2020
+    CSS code series 12th
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS CODE SERIES</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/9d89bb858d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="main_cover">
+            <img src="https://api.sololearn.com/Uploads/Avatars/1.jpg" id="sl_img" alt="☆"/>
+        </div>
+        <div style="width:100%;position:fixed;top:40px;left:0%;background-color:white;box-shadow:0px 0px 10px black;height:auto;">
+            <div style="height:120px;width:50%;margin:10px auto 10px auto;overflow:none;box-shadow:0px 0px 4px black;resize:both;">
+                <div style="height:120px;width:100%;background-color:none;border-style:none;overflow:scroll;outline-style:solid;">
+                    <div id="style">
+                        Hi there i am Ayush
+                    </div>
+                </div>
+            </div>
+            <h1>—: CSS Code :—</h1>
+            <div id="ak">
+                <h3>
+                    box-shadow : 
+                    <span id="value"></span> 
+                    <span id="value"></span> 
+                    <span id="value"></span>
+                    <span id="value"></span> 
+                </h3>
+                <h3>
+                    text-shadow : 
+                    <span id="value"></span> 
+                    <span id="value"></span> 
+                    <span id="value"></span>
+                    <span id="value"></span> 
+                </h3>
+            </div>
+            <button class="btn1" id="button1" onclick="CopyToClipboard('div1')">copy CSS code</button>
+            <button class="btn1" id="button1" onclick="css_info()">
+                About CSS code
+            </button>
+            <a href="https://code.sololearn.com/WFksVmq41nRF/?ref=app">
+                <button class="btn1" id="button1">
+                    Shadow triks
+                </button>
+            </a>
+        </div>
+        <button class="info" onclick="inf()">Info</button>
+        
+        <form>
+          <div class="main">
+            <div class="sub">
+                <p>BORDER COLOR</p>
+                <label style="display:block;"></label>
+                <input style="width:80%;" type="color"/>
+            </div>
+            
+            <div class="sub">
+                <p>BORDER WIDTH</p>
+                <label style="display:block;">auto</label>
+                <input style="width:80%;" type="range" min="-100" max="100" value="12"/>
+            </div>
+            
+            <div class="sub">
+                <p>BORDER VERTICLE SPACING</p>
+                <label style="display:block;">auto</label>
+                <input style="width:80%;" type="range" min="-100" max="100" value="12"/>
+            </div>
+            
+            <div class="sub">
+                <p>BORDER HORIZONTAL SPACING</p>
+                <label style="display:block;">auto</label>
+                <input style="width:80%;" type="range" min="0" max="100" value="12"/>
+            </div>          
+            
+            <div class="sub">
+                <p>BORDER COLOR</p>
+                <label style="display:block;"></label>
+                <input style="width:80%;" type="color"/>
+            </div>
+            
+            <div class="sub">
+                <p>BORDER WIDTH</p>
+                <label style="display:block;">auto</label>
+                <input style="width:80%;" type="range" min="-150" max="150" value="12"/>
+            </div>
+            
+            <div class="sub">
+                <p>BORDER VERTICLE SPACING</p>
+                <label style="display:block;">auto</label>
+                <input style="width:80%;" type="range" min="-150" max="150" value="12"/>
+            </div>
+            
+            <div class="sub">
+                <p>BORDER HORIZONTAL SPACING</p>
+                <label style="display:block;">auto</label>
+                <input style="width:80%;" type="range" min="0" max="100" value="12"/>
+            </div>
+            
+            
+          </div>
+          <input type ="reset" class="reset"/>
+        </form>
+        <br><br>
+        <!--
+        <div id="bottom">
+            <span style="color:blue;font-size:8px; float:left;margin-top:2px;margin-left:5px;font-family: 'Chelsea Market', cursive;line-height:12px;"> 
+                Custumize <br>background <br> color &nbsp;
+            </span>
+            <input type="color" class="col" id="color" value="#6759ff" style="width:30px;display:inline;margin:0 0;"/>
+            <span style="color:blue;font-size:8px; float:left;margin-top:2px;margin-left:5px;font-family: 'Chelsea Market', cursive;line-height:12px;"> 
+                Custumize<br> box<br> color &nbsp;
+            </span>
+            <input type="color" class="col" id="color_box" value="#ff0000" style="width:30px;display:inline;margin:0 0;"/>
+            <label id="next">
+              <a href="https://code.sololearn.com/WXgixjiyrRBI/?ref=app" style="text-decoration:none;font-family: 'Chelsea Market', cursive;color:purple;">
+                CSS code Part 5th<br>
+                Column properties
+              </a>
+            </label>
+        </div>
+        -->
+        <div id="cover">
+            
+        </div>
+        <div class="top">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <span id="top_mn">
+                CSS CODES SERIES
+                <img src="https://perishablepress.com/wp/wp-content/images/2008/misc-chunks/css-logo.jpg"/>
+            </span>
+        </div>
+        <div class="bar">
+            <div id="bar_top">
+                <a href="https://www.sololearn.com/Profile/16882555/?ref=app">
+                    <img src="https://api.sololearn.com/Uploads/Avatars/16882555.jpg"/>
+                    <br>
+                    <span>乂۝丹ⓨㄩک廾۝乂〖թг๏〗</span>
+                </a>
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </div>
+            <div id="bar_middle">
+                <div id="about_me">
+                    ABOUT ME
+                    <span>
+                        Name - Ayush kumar singh
+                    </span>
+                    <span>    
+                        Studys - 11th from St.thomas School
+                    </span>
+                    
+                    <span>
+                        Passion - To join ISRO
+                    </span>
+                    <span>
+                        Intrests - Coding (JAVA, Python, Web development, C/C++), Singing, Story reading etc...
+                    </span>
+                </div>
+                <div id="code_series">
+                    FULL CODE SERIES
+                    <a href="https://code.sololearn.com/W76nBOzYCEE6/?ref=app">CSS Filter Effect</a>
+                    <a href="https://code.sololearn.com/WECxReyG736y/?ref=app">Background Blend Mode</a>
+                    <a href="https://code.sololearn.com/Wr3g3JfxYIKI/?ref=app">2D Transform</a>
+                    <a href="https://code.sololearn.com/WH0PL59eh3Cw/?ref=app">3D Transform</a>
+                    <a href="https://code.sololearn.com/WXgixjiyrRBI/?ref=app">Column Properties</a>
+                    <a href="https://code.sololearn.com/WJwaTPYeoThp/?ref=app">Scroll Effect</a>
+                    <a href="https://code.sololearn.com/WoDDv3GSpCO5/?ref=app">Background Origin</a>
+                    <a href="https://code.sololearn.com/W6a07Q1j31z3/?ref=app">Background Clip</a>
+                    <a href="https://code.sololearn.com/WK1ikXKfuO6U/?ref=app">User Select</a>
+                    <a href="https://code.sololearn.com/WNzxw5f6wrld/?ref=app">Outline properties</a>
+                    <a href="https://code.sololearn.com/Wnj1I70yNjDL/?ref=app">Table CSS properties</a>
+                </div>
+                <div id="custumize_color">
+                    CUSTUMIZE COLOR
+                    <div>
+                        <input type="color" class="col" id="color" value="#303030"/>
+                        <span> 
+                            Custumize background <br>color
+                        </span>
+                    </div>
+                    <div>
+                        <input type="color" class="col" id="color_box" value="#ff0000"/>
+                        <span> 
+                            Custumize box <br>color
+                        </span>
+                    </div>
+                </div>
+                <br>
+            </div>
+            
+            <div id="bar_bottom">
+                &copy all right reserved<br>Dont copy the code
+            </div>
+        </div>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+*{
+    transition-duration:1s;
+}
+body {
+    user-select:none;
+}
+#main_cover{
+    height:100vh;
+    position:fixed;
+    width:100vw;
+    background-color:white;
+    top:0;
+    left:0;
+    z-index:100;
+    display:block;
+}
+#sl_img{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    position:fixed;
+    top:calc(50vh - 50px);
+    left:calc(50vw - 50px);
+    animation:load 10s infinite ease-in-out;
+}
+@keyframes load{
+    0%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(360deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+#style{
+    font-family:'Chelsea Market', cursive;
+    height:100%;
+    box-sizing:border-box;
+    width:100%;
+    overflow:scroll;
+    font-size:30px;
+    text-align:center;
+    padding-top:20px;
+    text-shadow:10px 10px 20px black;
+    box-shadow:10px 10px 20px black !important;
+}
+#gr{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+#gr1{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+h1{
+    text-align:center;
+    font-size:20px;
+    font-family: 'Chelsea Market', cursive;
+    margin:0;
+}
+h3{
+    font-size:10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left:10px;
+    text-indent:7px;
+    user-select:auto;
+    margin-top:0;
+    margin-bottom:0;
+    padding:0;
+    border-left-style:solid;
+}
+#button1{
+    float:right;
+    width:50px;
+    height:20px;
+    font-size:6px;
+    text-align:center;
+    margin:5px;
+    background-color:#6759ff;
+    border-radius:2px;
+    border-style:none;
+    color:white;
+    outline-color:black;
+}
+.main{
+    width:100%;
+    margin-top:50vh;
+}
+p{
+    font-family: 'Anton', sans-serif;
+}
+
+.sub{
+    width:90%;
+    height:auto;
+    background-color:white;
+    margin:10px;
+    text-align:center;
+    box-shadow:0px 3px 10px black;
+    border-radius:2px;
+    margin-top:20px;
+}
+.sub:nth-child(1){
+    margin-top:300px !important;
+}
+input{
+    margin:10px auto;
+    box-sizing:border-box;
+}
+select{
+    width:80%;
+    margin:10px auto 10px auto;
+    outline:none;
+    font-family: 'Anton', sans-serif;
+}
+label{
+    font-family: 'Chelsea Market', cursive;
+}
+h4{
+    text-decoration:underline;
+}
+.reset{
+    height:15px;
+    width:40px;
+    position:fixed;
+    font-size:8px;
+    top:42px;
+    margin:0% !important;
+    left:2px;
+    background-color:#6759ff;
+    border-radius:2px;
+    border-style:none;
+    color:white;
+    outline-color:black;
+}
+.info{
+    height:15px;
+    width:40px;
+    position:fixed;
+    font-size:8px;
+    top:42px;
+    right:2px;
+    background-color:#6759ff;
+    border-radius:2px;
+    border-style:none;
+    color:white;
+    outline-color:black;
+}
+h6{
+    text-align:left;
+}
+/*
+#next{
+    float:right;
+    text-align:center;
+    font-size:12px;
+    margin:8px 2px 0px 0px;
+    font-weight:bold;
+    font-size:10px;
+}*/
+/*
+.col{
+    float:left;
+    height:100%;
+    background-color:transparent;
+    border-style:none;
+}*/
+#cover{
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    background-color:gray;
+    opacity:0.5;
+    top:-100vh;
+    left:0;
+}
+.top{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:red;
+    width:100%;
+    height:40px;
+    box-shadow:-2px 0px 4px black;
+    color:#e2e2e2;
+}
+#top_mn{
+    float:right;
+    font-family: 'Chelsea Market', cursive;
+    font-weight:bold;
+    font-size:20px;
+    margin-top:8px;
+    margin-right:10px;
+}
+#top_mn > img{
+    height:36px;
+    float:right;
+    margin-top:-6px;
+    margin-right:-8px;
+    margin-left:20px;
+    padding:0;
+}
+.bar{
+    position:fixed;
+    top:0;
+    height:100vh;
+    width:200px;
+    overflow:scroll;
+    background-color:#272727;
+    left:-200px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    color:#e2e2e2;
+    font-size:15px;
+    font-weight:bold;
+}
+.fa-bars{
+    display:block;
+    float:left;
+    height:25px;
+    width:25px;
+    font-size:23px;
+    margin:0;
+    margin-top:7.5px;
+    margin-left:7.5px;
+    text-shadow:0 0 3px black;
+}
+.fa-arrow-left{
+    float:right;
+    font-size:23px;
+    margin:5px;
+    color:black !important;
+}
+#bar_top{
+    height:110px;
+    background-color:#c2175b;
+}
+#bar_top > a{
+    height:90px;
+    width:150px;
+    background-color:none;
+    float:left;
+    text-decoration:none;
+}
+#bar_top > a > img{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    margin:5px;
+}
+#bar_top > a > span{
+    font-size:12px;
+    margin-left:5px;
+    display:inline-block;
+    width:100%;
+}
+#bar_middle{
+    height:auto;
+    width:100%;
+    background-color:none;
+    padding-left:20px;
+    padding-top:10px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+#bar_middle > div{
+    height:auto;
+    width:calc(100% - 30px);
+    background-color:none;
+    border-bottom:solid black;
+    padding:10px;
+    margin:0;
+}
+#code_series{
+    overflow:hidden;
+    padding-top:10px;
+    
+}
+#code_series:hover{
+    color:#00ffff;
+    text-shadow:0 0 10px #00ffff;
+}
+#code_series > a{
+    display:block;
+    text-decoration:none;
+    padding-left:10px;
+    padding-top:10px;
+    color:#00ffff;
+    font-size:12px;
+    border-left:1px solid;
+    margin-left:15px;
+}
+#code_series > a:last-child{
+    
+}
+#code_series > a:first-child{
+    margin-top:13px;
+}
+#about_me{
+    overflow:hidden;
+}
+#about_me:hover{
+    color:#00ffff;
+    text-shadow:0 0 10px #00ffff;
+}
+#about_me > span{
+    font-size:12px;
+    display:block;
+    padding-left:10px;
+    padding-top:10px;
+    font-weight:normal;
+    color:#00ffff;
+    border-left:1px double;
+    margin-left:15px;
+}
+#about_me > span:last-child{
+    
+}
+#about_me > span:first-child{
+    margin-top:15px;
+}
+#custumize_color{
+    overflow:hidden;
+}
+#custumize_color:hover{
+    color:#00ffff;
+    text-shadow:0 0 10px #00ffff;
+}
+#custumize_color > div{
+    padding-left:10px;
+    padding-top:15px;
+    height:27px;
+    border-left:1px double;
+    margin-top:15px;
+    margin-left:15px;
+}
+
+#custumize_color input{
+   width:30px;
+   display:inline;
+   margin:0 0;
+   border-width:0 !important;
+   border-style:none !important;
+   border-color:none;
+   float:left;
+}
+#custumize_color span{
+    color:blue;
+    font-size:8px; 
+    float:left;
+    margin-top:2px;
+    margin-left:5px;
+    font-family: 'Chelsea Market', cursive;
+    line-height:12px;
+    margin-right:5px;
+    text-indent:center;
+    color:#00ffff;
+}
+#bar_bottom{
+    position:fixed;
+    bottom:0;
+    height:auto;
+    background-color:none;
+    text-align:right;
+    font-size:10px;
+    padding-right:10px;
+    right:100%;
+    width:100%;
+    background-color:#272727;
+}
+        </style>
+        <script>
+function transform_box(){
+    var l = document.querySelectorAll("label");
+    var s = document.querySelectorAll("span");
+    var i = document.querySelectorAll("input");
+    var k = document.querySelector("#style");
+    
+    s[3].innerHTML = i[0].value;
+    s[0].innerHTML = i[1].value/4 +"px";
+    s[1].innerHTML = i[2].value/4 +"px";
+    s[2].innerHTML = i[3].value/4 +"px ;";
+    s[7].innerHTML = i[4].value;
+    s[4].innerHTML = i[5].value/4 +"px";
+    s[5].innerHTML = i[6].value/4 +"px";
+    s[6].innerHTML = i[7].value/4 +"px ;";
+    //$("label")[0].html = abc;
+    //document.documentElement.style.scrollBehavior = abc ;
+    /*$("style").css({
+        "text-shadow":i[1].value/4 +"px " + i[2].value/4 +"px " + i[3].value/4 +"px " + i[0].value,
+        "box-shadow":i[5].value/4 +"px " + i[6].value/4 +"px " + i[7].value/4 +"px " + i[4].value
+    });*/
+    
+    k.style.textShadow = i[1].value/4 +"px " + i[2].value/4 +"px " + i[3].value/4 +"px " + i[0].value;
+    
+    k.parentElement.style.boxShadow = i[5].value/4 +"px " + i[6].value/4 +"px " + i[7].value/4 +"px " + i[4].value;
+    
+    l[0].innerHTML = i[0].value;
+    l[1].innerHTML = i[1].value/4 +"px";
+    l[2].innerHTML = i[2].value/4 +"px";
+    l[3].innerHTML = i[3].value/4 +"px";
+    l[4].innerHTML = i[4].value;
+    l[5].innerHTML = i[5].value/4 +"px";
+    l[6].innerHTML = i[6].value/4 +"px";
+    l[7].innerHTML = i[7].value/4 +"px";
+    //$("span")[0].html = abc;
+    
+}
+setInterval(transform_box,100);
+
+
+function change_bgc(){
+    var x = document.querySelector("#color").value;
+    document.body.style.background = x;
+    if (x=="#000000"){
+        $(".btn1").css("background-color","gray");
+        $(".top").css("background-color","gray");
+        $(".reset").css("background-color","gray");
+        $(".info").css("background-color","gray");
+    }
+    else{
+        $(".btn1").css("background-color",x);
+        $(".reset").css("background-color",x);
+        $(".info").css("background-color",x);
+        $(".top").css("background-color",x);
+    }
+}
+setInterval(change_bgc,0);
+
+function change_bgcb(){
+    var x = document.querySelector("#color_box").value;
+    document.querySelector("#style").style.background=x;
+    if (x=="#000000"){
+        document.querySelector("#style").style.color="#ffffff";
+    }
+    else{
+        document.querySelector("#style").style.color="#000000";
+    }
+}
+setInterval(change_bgcb,0);
+
+
+function css_info(){
+    Swal.fire({
+        icon: 'warning',
+        title:'POINT TO BE NOTED',
+        html: '<ul style="text-align:left;font-size:15px;">'+
+            "<li><b>Text Shadow : </b>The text-shadow property adds shadow to text.<br><b>Note : </b>This property accept multiple comma-separated list of shadows to be applied to the text.</li><hr>"+
+            "<li><b>Box Shadow : </b>The box-shadow property attaches one or more shadows to an element.<br><b>Note : </b>To attach more than one shadow to an element, add a comma-separated list of shadows.</li><hr>"+
+        '</ul>',
+        footer: 'Copy code by selecting them !</center>'
+    });          
+}
+
+function inf(){
+    Swal.fire({
+        icon: 'info',
+        title:'WHAT IS HTML SHADOW PROPERTIES',
+        html: 'There are two type of shadows uses & supported in CSS for Text and Container <ul style="text-align:left;"><li>Text Shadow</li><li>Box Shadow</li></ul>',
+        footer: '<center>To see about CSS code cheque "About CSS code" section.</center>'
+    });
+}
+
+function CopyToClipboard(containerid) { if (document.selection) { var range = document.body.createTextRange(); range.moveToElementText(document.getElementById(containerid)); range.select().createTextRange(); document.execCommand("copy"); } else if (window.getSelection) { var range = document.createRange(); range.selectNode(document.getElementById("ak")); window.getSelection().addRange(range); document.execCommand("copy"); 
+Swal.fire({
+    icon:"success",
+    title:"COPY PROCESS SUCCESFULL !",
+    text:"Text Copied To Clipboard"
+});
+} }
+
+/*-------------------------------------*/
+
+
+$(document).ready(function(){
+    /*$("body").click(function(){
+        $(".bar").css("left","-200px");
+    });*/
+    
+    function cover(){
+        $("#main_cover").css("top","100vh");
+        $("#main_cover > img").css("left","110vw");
+    }
+
+    setTimeout(cover,15000);
+    
+    Swal.fire({
+        icon: 'success',
+        title: 'Welcome To CSS Code ! <br> Part (12)',
+        html: 'Hay ! friends this Wonderful code is for you go and explore all about Shadow i.e. Box shadow and Text shadow.<hr>All the begginers are recommended to access the whole series to learn the new CSS properties in experimental way.',
+        footer: '&copy All rights reserved !'
+    });
+    
+    
+    $(".fa-bars").click(function(){
+        $(".bar").css("left","0px");
+        $("#cover").css("top","0px");
+        $("#bar_bottom").css("right","calc(100% - 200px)");
+    });
+    
+    $(".fa-arrow-left").click(function(){
+        $(".bar").css("left","-200px");
+        $("#cover").css("top","-100vh");
+        $("#bar_bottom").css("right","100%");
+    });
+    
+    $("#cover").click(function(){
+        $(".bar").css("left","-200px");
+        $(this).css("top","-100vh");
+        $("#bar_bottom").css("right","100%");
+    });
+    
+    $("#code_series").click(function(){
+        $(this).css("height","290px");
+        $("#custumize_color").css("height","20px");
+        $("#about_me").css("height","20px");
+    });
+    
+    $("#custumize_color").click(function(){
+        $(this).css("height","130px");
+        $("#code_series").css("height","20px");
+        $("#about_me").css("height","20px");
+    });
+    
+    $("#about_me").click(function(){
+        $(this).css("height","180px");
+        $("#code_series").css("height","20px");
+        $("#custumize_color").css("height","20px");
+    });
+    
+    $(".bar").dblclick(function(){
+        $("#about_me").css("height","20px");
+        $("#code_series").css("height","20px");
+        $("#custumize_color").css("height","20px");
+    });
+    
+});
+        </script>
+    </body>
+</html>
